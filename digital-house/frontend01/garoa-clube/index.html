@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre no Garoa Clube!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/sp.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="titulo">Terra da Garoa</div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Clube</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Garoa Clube</h1>
+        <p id="descricao">Estamos criando um comunidade para todos os apaixonados por São Paulo. <br> Será um espaço para compartilharmos todo tipo de conteúdo sobre a cidade.<br>Conto com você?<br>É só se cadastrar logo abaixo:</p>
+        <div class="card">
+            <form action="/cadastro" method="post">
+                <div class="campo">
+                    <div><label for="nome">Nome</label></div>
+                    <input type="text" required="required" name="nome" id="nome" placeholder="João da Silva" maxlength="100">
+                </div>
+                <div class="campo">
+                    <div><label for="email">Email</label></div>
+                    <input type="email" required="required" name="email" id="email" placeholder="joao@email.com">
+                </div>
+                <div class="campo">
+                    <div><label for="telefone">Telefone</label></div>
+                    <input type="tel" required="required" name="telefone" placeholder="11912345678" maxlength="11" pattern="[0-9]{11}" title="Apenas números">
+                </div>
+                <div class="campo">
+                    <div><label for="nascimento">Data de Nascimento</label></div>
+                    <input type="date" required="required" name="nascimento" id="nascimento">
+                </div>
+                <div class="campo radio-inline">
+                    <input type="radio" required="required" name="maioridade" id="maior">
+                    <label for="maior">Maior de 18 anos</label>
+                </div>
+                <div class="campo radio-inline">
+                    <input type="radio" required="required" name="maioridade" id="menor">
+                    <label for="menor">Menor de 18 anos</label>
+                </div>
+                <div class="campo">
+                    <p id="qual-perfil">Com qual desses perfis você se encaixa?</p>
+                </div>
+                <div class="campo radio-inline">
+                    <input type="radio" required="required" name="perfil" id="residente">
+                    <label for="residente">Residente</label>
+                </div>
+                <div class="campo radio-inline">
+                    <input type="radio" required="required" name="perfil" id="turista">
+                    <label for="turista">Turista</label>
+                </div>
+                <div class="campo radio-inline">
+                    <input type="radio" required="required" name="perfil" id="estudante">
+                    <label for="estudante">Estudante</label>
+                </div>
+                <div class="campo radio-inline">
+                    <input type="radio" required="required" name="perfil" id="trabalho">
+                    <label for="trabalho">Trabalho</label>
+                </div>
+                <div class="campo">
+                    <p id="interesses">Interesses</p>
+                </div>
+                    <div class="card-interesses">
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="parques">
+                            <label for="parques">Parques</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="museus">
+                            <label for="museus">Museus</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="exposicoes">
+                            <label for="exposicoes">Exposições</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="eventos">
+                            <label for="eventos">Eventos</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="gastronomia">
+                            <label for="gastronomia">Gastronomia</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="shopping">
+                            <label for="shopping">Shopping</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="hospedagem">
+                            <label for="hospedagem">Hospedagem</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="coworking">
+                            <label for="coworking">Coworking</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="cinema">
+                            <label for="cinema">Cinema</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="bares">
+                            <label for="bares">Bares</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="baladas">
+                            <label for="baladas">Baladas</label>
+                        </div>
+                        <div class="campo">
+                            <input type="checkbox" name="interesses" id="shows">
+                            <label for="shows">Shows</label>
+                        </div>
+                    </div>
+                <button type="reset" class="botao" id="reset">Cancelar</button>
+                <button type="submit" class="botao" id="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a target="_blank" href="https://twitter.com/prefsp"><div class="redes" id="twitter"></div></a>
+        <a target="_blank" href="https://www.facebook.com/PrefSP/"><div class="redes" id="facebook"></div></a>
+        <a target="_blank" href="https://www.youtube.com/user/prefeiturasaopaulo"><div class="redes" id="youtube"></div></a>
+    </footer>
+</body>
+</html>

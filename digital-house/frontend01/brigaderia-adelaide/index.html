@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomenda</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+        <div id="logo2">Brigaderia Adelaide</div>
+        <div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sabores</a></li>
+                <li><a href="#">Encomendas</a></li>
+                <li><a href="#">Onde Estamos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <form action="/pedido" method="post">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Maria José da Silva">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="maria@email.com">
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="DDD + número">
+            </div>
+            <p class="escolha">Sabores:</p>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="tradicional">
+                <label for="tradicional"> <div class="brigadeiro" id="tradicional"></div>tradicional</label>
+                <input type="number" name="quantidade-tradicional" id="quantidade-tradicional" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="meio-amargo">
+                <label for="meio-amargo"> <div class="brigadeiro" id="meio-amargo"></div>meio amargo</label>
+                <input type="number" name="quantidade-meio-amargo" id="quantidade-meio-amargo" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="leite-ninho">
+                <label for="leite-ninho"> <div class="brigadeiro" id="leite-ninho"></div>leite ninho</label>
+                <input type="number" name="quantidade-leite-ninho" id="quantidade-leite-ninho" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="dois-amores">
+                <label for="dois-amores"> <div class="brigadeiro" id="dois-amores"></div>dois amores</label>
+                <input type="number" name="quantidade-dois-amores" id="quantidade-dois-amores" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="capuccino">
+                <label for="capuccino"> <div class="brigadeiro" id="capuccino"></div>capuccino</label>
+                <input type="number" name="quantidade-capuccino" id="quantidade-capuccino" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="sensacao">
+                <label for="sensacao"> <div class="brigadeiro" id="sensacao"></div>sensação</label>
+                <input type="number" name="quantidade-sensacao" id="quantidade-sensacao" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="morango">
+                <label for="morango"> <div class="brigadeiro" id="morango"></div>morango</label>
+                <input type="number" name="quantidade-morango" id="quantidade-morango" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="pistache">
+                <label for="pistache"> <div class="brigadeiro" id="pistache"></div>pistache</label>
+                <input type="number" name="quantidade-pistache" id="quantidade-pistache" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <div class="doces">
+                <input type="checkbox" name="brigadeiro" id="pacoca">
+                <label for="pacoca"> <div class="brigadeiro" id="pacoca"></div>paçoca</label>
+                <input type="number" name="quantidade-pacoca" id="quantidade-pacoca" min="0" placeholder="qtd" class="qtde">
+            </div>
+            <p class="escolha">Forma de pagamento:</p>
+            
+            <div class="pagamentos">
+                <div>
+                    <input type="radio" name="pagamento" id="dinheiro">
+                    <label for="dinheiro">Dinheiro</label>
+                </div>
+                <div>
+                    <input type="radio" name="pagamento" id="cartao">
+                    <label for="cartao">Cartão</label>
+                </div>
+                <div>
+                    <input type="radio" name="pagamento" id="pix">
+                    <label for="pix">Pix</label>
+                </div>
+            </div>
+            <button type="reset" id="botao-reset">Cancelar</button>
+            <button type="submit" id="botao-enviar">Enviar</button>
+        </form>
+        <a href="#"><div id="zap"></div></a>
+    </main>
+</body>
+</html>

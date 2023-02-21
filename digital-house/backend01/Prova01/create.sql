@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS filiais (
+id INT auto_increment PRIMARY KEY,
+nome VARCHAR(200) NOT NULL,
+rua VARCHAR(200) NOT NULL,
+numero VARCHAR(50) NOT NULL,
+cidade VARCHAR(200) NOT NULL,
+estado VARCHAR(200) NOT NULL,
+is_cinco_estrelas BIT NOT NULL
+);

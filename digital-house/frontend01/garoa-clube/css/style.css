@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 10px 0px;
+}
+
+h1, #titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+
+#titulo {
+    font-size: 50px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 5px 10px 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 80px;
+    margin-left: 15px;
+}
+
+#descricao {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.card {
+    background-color: black;
+    margin-left: 15px;
+    padding: 15px;
+    border-radius: 18px;
+    width: fit-content;
+}
+
+.campo {
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.campo:hover {
+    font-size: larger;
+    color:slategray;
+}
+
+.radio-inline {
+    display: inline-block;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#qual-perfil, #interesses {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-interesses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.botao {
+    border-style: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+#reset:hover {
+    background-color: gray;
+}
+
+#submit:hover {
+    background-color: orangered;
+    color: white;
+}
+
+footer {
+    margin: 15px 0px
+}
+
+.redes {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10px 10px;
+    position: relative;
+    left: 20px;
+}
+
+.redes:hover {
+    transform: scale(1.2);
+}
+
+#twitter {
+    background-image: url('../img/twitter.png');
+}
+
+#facebook {
+    background-image: url('../img/facebook.png');
+}
+
+#youtube {
+    background-image: url('../img/youtube.png');
+}

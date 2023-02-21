@@ -1,0 +1,40 @@
+version: '3'
+
+networks:
+  public:
+    name: public
+    driver: bridge
+
+  internal:
+    name: internal
+    driver: bridge
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_USER=wpuser
+      - MYSQL_PASSWORD=my-secret-pw
+      - MYSQL_DATABASE=wordpressdb
+      - WORDPRESS_TABLE_PREFIX=hj
+    networks:
+      - internal
+
+  web:
+    image: wordpress:latest
+    ports:
+      - 8081:80
+    environment:
+      - WORDPRESS_DB_HOST=db:3306
+      - WORDPRESS_DB_USER=wpuser
+      - WORDPRESS_DB_PASSWORD=my-secret-pw
+      - WORDPRESS_DB_NAME=wordpressdb
+      - WORDPRESS_TABLE_PREFIX=hj
+    depends_on:
+      - db
+    links:
+      - db:wordpressdb
+    networks:
+      - public
+      - internal

@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+}
+
+header {
+    text-align: center;
+    background-color: #fff5fb;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+}
+
+#logo2 {
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color: #dda7be;
+    text-shadow: 1px 2px 1px #b595a2;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #b66e8b;
+    height: 40px;
+    border-radius: 15px;    
+}
+
+li:hover {
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 600px;
+    line-height: 2;
+}
+
+.escolha {
+    padding: 5px 0px;
+    font-size: 20px;    
+}
+
+.doces {
+    background-color: white;
+    border-style: solid;
+    border-color: #f1d8e3;
+    border-radius: 15px;
+    width: 150px;
+    height: fit-content;
+    text-align: center;
+    display: inline-block;
+}
+
+.doces:hover {
+    border-color: #b66e8b;
+}
+
+.brigadeiro {
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    position: relative;
+    left: 45px;
+}
+
+.qtde {
+    width: 50px;
+    display: block;
+    position: relative;
+    left: 50px
+}
+
+#tradicional {
+    background-image: url('../img/tradicional.jpg');
+}
+
+#meio-amargo {
+    background-image: url('../img/meio-amargo.jpg');
+}
+
+#leite-ninho {
+    background-image: url('../img/leite-ninho.jpg');
+}
+
+#dois-amores {
+    background-image: url('../img/dois-amores.jpg');
+}
+
+#capuccino {
+    background-image: url('../img/capuccino.jpg');
+}
+
+#sensacao {
+    background-image: url('../img/sensacao.jpg');
+}
+
+#morango {
+    background-image: url('../img/morango.jpg');
+}
+
+#pistache {
+    background-image: url('../img/pistache.jpg');
+}
+
+#pacoca {
+    background-image: url('../img/pacoca.jpg');
+}
+
+.pagamentos > div {
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+#botao-reset {
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #b595a2;
+    border-color: #69575e;
+    border-width: 2px;
+    color: whitesmoke;
+    position: relative;
+    top: 5px;
+    padding: 5px;
+}
+
+#botao-reset:hover {
+    background-color: black;
+    border-color: black;
+    border-width: 6px;
+}
+
+#botao-enviar {
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #b595a2;
+    border-color: #69575e;
+    border-width: 2px;
+    color: whitesmoke;
+    position: relative;
+    top: 5px;
+    padding: 5px;
+}
+
+#botao-enviar:hover {
+    background-color: black;
+    border-color: black;
+    border-width: 6px;
+ }
+
+ #zap {
+    background-image: url('../img/zap.png');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

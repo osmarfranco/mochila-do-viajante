@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+}
+
+.header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+#bio {
+    position: relative;
+    width: 1280px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.conteudo {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    list-style-position: inside;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
+iframe {
+    margin: 10px 20px;
+    position: relative;
+}
+
+#card {
+    background-color: rgb(17, 17, 17);
+    color: rgb(230, 230, 230);
+    border-radius: 20px;
+    position: relative;
+    margin: 10px 20px;
+    width: 1000px;
+}
+
+.redes {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10px 10px;
+    position: relative;
+    left: 20px;
+}
+
+#twitter {
+    background-image: url('../img/twitter.png');
+}
+
+#facebook {
+    background-image: url('../img/facebook.png');
+}
+
+#youtube {
+    background-image: url('../img/youtube.png');
+}
